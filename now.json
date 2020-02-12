@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "name": "tverio-team-bot",
+  "alias": [
+    "tverio-team-bot.now.sh"
+  ],
+  "public": true,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node-server",
+      "config": {
+        "includeFiles": [
+          "binaries/**",
+          "audios/**"
+        ]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
+      },
+      "src": "/.*",
+      "dest": "/index.js"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "tverio-team-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ilya Lesik <ilya@lesik.dev>",
+  "license": "MIT",
+  "engines": {
+    "node": "12.x"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "telegraf": "^3.36.0"
+  }
+}
