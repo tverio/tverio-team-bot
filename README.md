@@ -20,4 +20,4 @@ now -e REBRANDLY_TOKEN=<rebrandly-token> BOT_TOKEN=<bot-token>
 
 ### Configuring WebHook
 
-GET `https://tverio-team-bot.now.sh/start`
+GET [`https://tverio-team-bot.now.sh/start`](https://tverio-team-bot.now.sh/start)

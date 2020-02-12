@@ -17,6 +17,16 @@
       }
     }
   ],
+  "env": {
+    "BOT_TOKEN": "@bot-token",
+    "REBRANDLY_TOKEN": "@rebrandly-token"
+  },
+  "build": {
+    "env": {
+      "BOT_TOKEN": "@bot-token",
+      "REBRANDLY_TOKEN": "@rebrandly-token"
+    }
+  },
   "routes": [
     {
       "headers": {
