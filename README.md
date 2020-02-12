@@ -1,5 +1,13 @@
 # [WIP] Tver.io Team Bot
 
+### Commands
+
+#### Create short link:
+
+```
+/link <destination> <slashtag>
+```
+
 ### Development
 
 ```

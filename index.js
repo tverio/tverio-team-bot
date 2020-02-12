@@ -14,16 +14,22 @@ const bot = new Telegraf(process.env.BOT_TOKEN, {
     }
 });
 
-bot.command('link', async (ctx) => {
+bot.start((ctx) => ctx.reply('Welcome to Tver.io Team Bot'))
+bot.help((ctx) => {
+    ctx.reply('Create short link: /link <destination> <slashtag>')
+});
+
+bot.command('link',  (ctx) => {
     const {reply, message} = ctx;
     const splittedMessage = message.text.split(" ");
     const destination = splittedMessage[1];
     const slashtag = splittedMessage[2];
-    const result = await rebrandlyClient.links.create({
+    rebrandlyClient.links.create({
         destination,
         slashtag
+    }).then((result) => {
+        reply(result.shortUrl);
     });
-    reply(result);
 });
 
 app.use(bot.webhookCallback('/callback'));
