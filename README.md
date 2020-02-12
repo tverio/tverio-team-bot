@@ -16,7 +16,9 @@ REBRANDLY_TOKEN=<rebrandly-token> BOT_TOKEN=<bot-token> NODE_ENV=development nod
 
 ### Deployment
 
+```
 now -e REBRANDLY_TOKEN=<rebrandly-token> BOT_TOKEN=<bot-token>
+```
 
 ### Configuring WebHook
 
