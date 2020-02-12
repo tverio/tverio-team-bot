@@ -1,14 +1,14 @@
-# Tver.io Team Bot
+# [WIP] Tver.io Team Bot
 
 ### Development
 
 ```
-BOT_TOKEN=<bot-token> NODE_ENV=development node index.js
+REBRANDLY_TOKEN=<rebrandly-token> BOT_TOKEN=<bot-token> NODE_ENV=development node index.js
 ```
 
 ### Deployment
 
-now -e BOT_TOKEN=<bot-token>
+now -e REBRANDLY_TOKEN=<rebrandly-token> BOT_TOKEN=<bot-token>
 
 ### Configuring WebHook
 
