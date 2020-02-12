@@ -26,7 +26,10 @@ bot.command('link',  (ctx) => {
     const slashtag = splittedMessage[2];
     rebrandlyClient.links.create({
         destination,
-        slashtag
+        slashtag,
+        domain: {
+            fullName: "go.tver.io"
+        }
     }).then((result) => {
         reply(result.shortUrl);
     });
