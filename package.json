@@ -8,7 +8,7 @@
     "node": "12.x"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "rebrandly": "^2.0.1",
     "telegraf": "^3.36.0"
   }
